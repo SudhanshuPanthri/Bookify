@@ -1,0 +1,11 @@
+﻿@if (TempData["success"] != null)
+{
+    <div style="width:100%;height:80px;display:flex;justify-content:center;align-items:center">
+        <h2>@TempData["success"]</h2>
+    </div>
+}
+
+@if (TempData["error"] != null)
+{
+    <h2>@TempData["error"]</h2>
+}
